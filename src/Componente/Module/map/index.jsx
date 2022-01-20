@@ -1,7 +1,11 @@
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import './style.css';
 
+const data = require('../../../data.json');
+
+const { artisans } = data;
 export default function MapLeaflet() {
+  console.log(artisans);
   return (
     <>
       <div className="container">

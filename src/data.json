@@ -1,25 +1,25 @@
 {
-  "artisant": [
+  "artisans": [
     {
       "type": "plombier",
       "name": "CLEMENT LENANCKER",
       "address": "27 RUE DU DOCTEUR YERSIN",
-      "lat": "50.620550",
-      "long": "3.054650"
+      "lat": "50.62055",
+      "long": "3.05465"
     },
     {
       "type": "carreleur",
       "name": "AFP DEVELOPPEMENT",
       "address": "12 PLACE SAINT HUBERT",
-      "lat": "50.638670",
-      "long": "3.070870"
+      "lat": "50.63867",
+      "long": "3.07087"
     },
     {
       "type": "plombier",
       "name": "FL NORD HABITAT",
       "address": "2 RUE DE VALMY",
-      "lat": "50.630880",
-      "long": "3.065390"
+      "lat": "50.63088",
+      "long": "3.06539"
     },
     {
       "type": "carreleur",

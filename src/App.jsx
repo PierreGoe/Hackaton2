@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/carrelage" element={<CarrelagePage />} />
+        <Route path="/" element={<CarrelagePage />} />
       </Routes>
     </>
   );
