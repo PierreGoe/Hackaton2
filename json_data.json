@@ -1,0 +1,53 @@
+{
+  "artisant": [
+    {
+      "type": "plombier",
+      "name": "CLEMENT LENANCKER",
+      "address": "27 RUE DU DOCTEUR YERSIN",
+      "lat": "50.620550",
+      "long": "3.054650"
+    },
+    {
+      "type": "carreleur",
+      "name": "AFP DEVELOPPEMENT",
+      "address": "12 PLACE SAINT HUBERT",
+      "lat": "50.638670",
+      "long": "3.070870"
+    },
+    {
+      "type": "plombier",
+      "name": "FL NORD HABITAT",
+      "address": "2 RUE DE VALMY",
+      "lat": "50.630880",
+      "long": "3.065390"
+    },
+    {
+      "type": "carreleur",
+      "name": "EURASIA  BANCEL BTP",
+      "address": "3 BOULEVARD DE BELFORT",
+      "lat": "50.61925506591797",
+      "long": "3.0771420001983643"
+    },
+    {
+      "type": "plombier",
+      "name": "RENOVIAL",
+      "address": "21 AVENUE ALBERT",
+      "lat": "50.6235121",
+      "long": "3.0454009"
+    },
+    {
+      "type": "carreleur",
+      "name": "CONSTRUCTION RENOVATION REHABILITATION (C2R)",
+      "address": "152 BOULEVARD DE LYON",
+      "lat": "50.677791595458984",
+      "long": "3.1796698570251465"
+    },
+    {
+      "type": "plombier",
+      "name": "GUELTON",
+      "address": "28 BOULEVARD DE MULHOUSE",
+      "lat": "50.68666458129883",
+      "long": "3.1963932514190674"
+    }
+  ]
+}
