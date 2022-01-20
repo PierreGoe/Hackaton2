@@ -1,4 +1,5 @@
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import { MapContainer, TileLayer } from 'react-leaflet';
+import LocateUser from '../../LocateUser';
 import './style.css';
 
 export default function MapLeaflet() {
@@ -13,7 +14,7 @@ export default function MapLeaflet() {
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={[50.629, 2.987]} />
+            <LocateUser />
           </MapContainer>
         </div>
       </div>
