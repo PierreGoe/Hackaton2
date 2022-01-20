@@ -28,4 +28,9 @@ p {
   font-weight: normal;
   color: grey;
   font-size: small;
+  text-transform: capitalize;
+}
+
+span {
+  text-transform: capitalize;
 }
