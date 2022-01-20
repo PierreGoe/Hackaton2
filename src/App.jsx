@@ -1,14 +1,13 @@
-import Carrelage from 'Componente/Carrelage';
+import CarrelagePage from 'Pages/CarrelagePage';
 import 'style.css';
-import Carrelage2 from 'Componente/Carrelage2';
-import MapLeaflet from 'Componente/Module/map';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Carrelage />
-      <MapLeaflet />
-      <Carrelage2 />
+      <Routes>
+        <Route path="/carrelage" element={<CarrelagePage />} />
+      </Routes>
     </>
   );
 }
