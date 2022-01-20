@@ -1,8 +1,12 @@
 html {
-  width: 428px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f4f5f6;
 }
 
 .leaflet-container {
-  height: 200px;
-  width: 400px;
+  margin: auto;
+  width: 350px;
+  height: 350px;
 }

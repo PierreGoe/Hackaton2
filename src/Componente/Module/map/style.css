@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.flex {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 400px;
+}
+
+h3 {
+  padding: 0 20px;
+  font-family: 'Open sans', sans-serif;
+  font-weight: bold;
+  margin-top: 3vh;
+  margin-bottom: 0;
+}
+
+p {
+  padding: 0 20px;
+  font-family: 'Open sans', sans-serif;
+  font-weight: normal;
+  color: grey;
+  font-size: small;
+}
