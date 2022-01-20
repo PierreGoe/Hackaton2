@@ -58,8 +58,16 @@ export default function MapLeaflet() {
                     icon={artisan.type === 'plombier' ? Plombier : Carreleur}
                   >
                     <Popup>
-                      <h2>{[artisan.name]}</h2>
-                      <h4>{[artisan.address]}</h4>
+                      <p>
+                        Nom: <span>{[artisan.name]}</span>
+                      </p>
+
+                      <p>
+                        Adresse: <span>{[artisan.address]}</span>
+                      </p>
+                      <p>
+                        Pressionnel: <span>{[artisan.type]}</span>
+                      </p>
                     </Popup>
                   </Marker>
                 )
