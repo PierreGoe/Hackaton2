@@ -1,5 +1,16 @@
+import Carrelage from 'Componente/Carrelage';
+import 'style.css';
+import Carrelage2 from 'Componente/Carrelage2';
+import MapLeaflet from 'Componente/Module/map';
+
 function App() {
-  return <h1>Hello there!</h1>;
+  return (
+    <>
+      <Carrelage />
+      <MapLeaflet />
+      <Carrelage2 />
+    </>
+  );
 }
 
 export default App;
