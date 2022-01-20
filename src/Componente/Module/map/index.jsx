@@ -1,6 +1,6 @@
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import pinCarreleur from 'Componente/asset/pinCarreleur.png';
 import pinPlombier from 'Componente/asset/pinPlombier.png';
 import LocateUser from '../../LocateUser';
@@ -20,15 +20,31 @@ const Plombier = new L.Icon({
 });
 
 export default function MapLeaflet() {
+  const [currUrl, setCurrUrl] = useState('');
+
+  useEffect(() => {
+    const url = window.location.href.split('/')[3].toString();
+
+    switch (url) {
+      case 'carrelage':
+        setCurrUrl('carreleur');
+        break;
+      case 'douche':
+        setCurrUrl('plombier');
+        break;
+      default:
+        break;
+    }
+  }, []);
   const [artisansData] = useState(artisans);
   return (
     <>
       <div className="container">
         <div className="flex">
           <h3>Besoin d&apos;un Pro ?</h3>
-          <p>Localise toi pour trouver les plus proche.</p>
+          <p>Localise toi pour trouver les plus proches.</p>
 
-          <MapContainer center={[50.629, 2.987]} zoom={13} scrollWheelZoom>
+          <MapContainer center={[51.629, 2.987]} zoom={13} scrollWheelZoom>
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -36,15 +52,17 @@ export default function MapLeaflet() {
             ;
             {artisansData.map((artisan) => {
               return (
-                <Marker
-                  position={[artisan.lat, artisan.long]}
-                  icon={artisan.type === 'plombier' ? Plombier : Carreleur}
-                >
-                  <Popup>
-                    <p>{[artisan.name]}</p>
-                    <p>{[artisan.address]}</p>
-                  </Popup>
-                </Marker>
+                currUrl === artisan.type && (
+                  <Marker
+                    position={[artisan.lat, artisan.long]}
+                    icon={artisan.type === 'plombier' ? Plombier : Carreleur}
+                  >
+                    <Popup>
+                      <h2>{[artisan.name]}</h2>
+                      <h4>{[artisan.address]}</h4>
+                    </Popup>
+                  </Marker>
+                )
               );
             })}
             <LocateUser />
