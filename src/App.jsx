@@ -1,22 +1,21 @@
 import CarrelagePage from 'Pages/CarrelagePage';
+import DouchePage from 'Pages/DouchePage';
 import { Route, Routes } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import 'style.css';
 
 function App() {
   const [currUrl, setCurrUrl] = useState('');
-  const [urlParams, setUrlParams] = useState('');
 
   useEffect(() => {
-    setCurrUrl(window.location.toString());
-    setUrlParams(currUrl.split('/'));
-    console.log(urlParams[3]);
+    setCurrUrl(window.location.href.split('/')[3].toString());
   }, [currUrl]);
 
   return (
     <>
       <Routes>
         <Route path="/carrelage" element={<CarrelagePage />} />
+        <Route path="/douche" element={<DouchePage />} />
       </Routes>
     </>
   );
